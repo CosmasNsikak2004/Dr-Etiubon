@@ -162,7 +162,7 @@ section{
 }
 .home-sci{
     position: absolute;
-    padding: 3rem 0 0;
+    padding: 5rem 0 0;
     width: 170px;
     display: flex;
     justify-content: space-between;
@@ -188,7 +188,6 @@ section{
     scale: 0.95;
 }
 .about{
-    padding: 0 9% 2rem;
     min-height: auto;
     background: linear-gradient(to bottom, #59ff8b 0%, #f5f6f8 80%);
 }
@@ -831,6 +830,9 @@ section{
     .header.sticky .navbar .active{
         color: lime;
     }       
+    .waves{
+        display: none;
+    }
 }
 @media(max-width: 607px){
     .home-content h4{
