@@ -73,19 +73,19 @@ html{
     color: #fff;
 }
 .logo i{
-    color: #00abf0;
+    color: #01B636;
 }
 .header.sticky .logo{
     color: #080808;
 }
 .header.sticky .logo i{
-    color: #00abf0;
+    color: #01B636;
 }
 .header.sticky .navbar a{
     color: #080808;
 }
 .header.sticky .navbar a:hover{
-    color: #00005A;
+    color: lime;
 }
 .navbar{
     position: relative;
@@ -101,22 +101,22 @@ html{
     transition: all 0.5s ease;
 }
 .navbar a:hover{
-    color:#00005A;
+    color:lime;
     scale: 1.05;
 }
 .navbar a:active{
     scale: 0.95;
 }
 .navbar .active{
-    color: #00abf0;
+    color: #01B636;
 }
 .header.sticky .navbar .active{
-    color: #00abf0;
+    color: #01B636;
 }
 #menu-icon{
     position: relative;
     font-size: 2.5rem;
-    color: #00005A;
+    color: #01B636;
     cursor: pointer;
     display: none;
 }

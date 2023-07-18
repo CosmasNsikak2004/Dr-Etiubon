@@ -60,7 +60,7 @@ body{
     color: #080808;
 }
 .header.sticky .navbar a:hover{
-    color: #00005A;
+    color: lime;
 }
 .navbar{
     position: relative;
@@ -76,7 +76,7 @@ body{
     transition: all 0.5s ease;
 }
 .navbar a:hover{
-    color:#00005A;
+    color:lime;
     scale: 1.05;
 }
 .navbar a:active{
@@ -91,7 +91,7 @@ body{
 #menu-icon{
     position: relative;
     font-size: 2.5rem;
-    color: #00005A;
+    color: #01B636;
     cursor: pointer;
     display: none;
 }
@@ -506,7 +506,7 @@ section{
 .grid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap:50px;
+    grid-gap:100px;
     margin-bottom: 50px;
 }        
 .card {
@@ -582,7 +582,8 @@ section{
     cursor: pointer;
 }
 .ex i{
-    margin-left: 20px;
+    margin-left: 10px;
+    font-size: 15px;
 }
 .ex:hover{
     background: #01B636;
@@ -599,6 +600,7 @@ section{
 }
 .ref-content{
     position: relative;
+    padding: 0 40px;
 }
 .content-ref{
     position: relative;
@@ -724,6 +726,11 @@ section{
     color: #fff;
 }
 /* BREAKPOINTS */
+@media(max-width: 1280px){
+    .liquid-shape{
+        right: 0px;
+    }    
+}
 @media(max-width: 1200px){
     html{
         font-size: 55%;
@@ -766,27 +773,24 @@ section{
     }
 }
 @media(max-width: 768px){
-    .header{
-        background: #00abf0;
-    }
     #menu-icon{
         display: block;
     }
-    .logo i{
-        color: #fff;
-    }    
     .navbar{
         position: absolute;
         top: 100%;
         left: -100%;
         width: 100%;
         padding: 1rem 4%;
-        background: #00abf0;
+        background: lime;
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0,.2);
         z-index: 1;
         transition: .25s ease;
         transition-delay: .25s;
     }
+    .header.sticky .navbar a{
+        color: #fff;
+    }    
     .navbar a{
         display: block;
         font-size: 2rem;
@@ -810,7 +814,7 @@ section{
         left: -100%;
         width: 100%;
         height: 100%;
-        background: #00005A;
+        background: #01B636;
         border-top: .1rem solid rgba(0, 0, 0,.2);
         z-index: -1;
         transition: .25s ease;
@@ -820,9 +824,12 @@ section{
         left: 0;
         transition-delay: .25s;
     }
-    .header.sticky .navbar a{
+    .header .navbar a{
         color: #fff;
-    }    
+    } 
+    .header.sticky .navbar .active{
+        color: lime;
+    }       
 }
 @media(max-width: 607px){
     .home-content h4{
