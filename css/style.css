@@ -188,6 +188,7 @@ section{
     scale: 0.95;
 }
 .about{
+    padding: 0 9% 2rem;
     min-height: auto;
     background: linear-gradient(to bottom, #59ff8b 0%, #f5f6f8 80%);
 }
