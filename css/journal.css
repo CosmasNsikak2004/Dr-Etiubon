@@ -139,9 +139,9 @@ section{
     text-align: center;
 }
 .btn1{
-    border: 2.5px solid #00abf0;
+    border: 2.5px solid #01B636;
     background: none;
-    color: #00abf0;
+    color: #01B636;
     display: block;
     margin: 50px 0;
     width: fit-content;
@@ -156,7 +156,7 @@ section{
 }
 
 .btn1:hover{
-    background: #00abf0;
+    background: #01B636;
     color: var(--bg-white);
     scale: 1.05;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
@@ -210,7 +210,7 @@ section{
     align-items: center;
     flex-direction: column;
     min-height: auto;
-    padding-bottom: 4rem;
+    padding: 0 8rem 4rem;
 }
 .education .education-row{
     display: flex;
@@ -222,15 +222,13 @@ section{
 }
 .education-column .title{
     text-align: center;
-    /* position: relative;
-    display: inline-block; */
     font-size: 2.5rem;
     font-family: var(--Playfair);
     margin: 0 0 1.5rem 2rem;
     text-shadow: .5px 1px 2px #555555;
 }
 .education-column .education-box{
-    border-left: .2rem solid #00abf0;
+    border-left: .2rem solid #01B636;
     position: relative;
 }
 .education-box .education-content{
@@ -241,7 +239,7 @@ section{
     content: '';
     position: absolute;
     top: 0;
-    background: #00abf0;
+    background: #01B636;
     border-radius: 50%;
     left: -.6rem;
     width: 1rem;
@@ -250,7 +248,7 @@ section{
 .education-content .content{
     position: relative;
     padding: 1.5rem;
-    border: .2rem solid #00abf0;
+    border: .2rem solid #01B636;
     border-radius: .6rem;
     margin-bottom: 2rem;
     overflow: hidden;
@@ -263,7 +261,7 @@ section{
     left: 0;
     width: 0;
     height: 100%;
-    background: #b9ebff;
+    background: #84ffa9;
     z-index: -1;
     transition: .5s;
 }
@@ -272,7 +270,7 @@ section{
 }
 .education-content .content .year{
     font-size: 1.5rem;
-    color: #00abf0;
+    color: #01B636;
     padding-bottom: .5rem;
 }
 .education-content .content .year i{
@@ -282,8 +280,8 @@ section{
     font-size: 1.8rem;
 }
 .ex{
-    border: 2px solid #00abf0;
-    color: #00abf0;
+    border: 2px solid #01B636;
+    color: #01B636;
     margin: 10px auto;
     border-radius: 3px;
     font-size: 15px;
@@ -306,8 +304,8 @@ section{
     justify-content: space-between;
     align-items: center;
     padding: .8rem;
-    background: #00abf0;
-    border: .2rem solid #00abf0;
+    background: #01B636;
+    border: .2rem solid #01B636;
     border-radius: .6rem;
     z-index: 1;
     overflow: hidden;
@@ -319,7 +317,7 @@ section{
     left: 0;
     width: 0;
     height: 100%;
-    background: #9fd3e9;
+    background: #84ffa9;
     z-index: -1;
     transition: .5s;
 }
@@ -375,27 +373,24 @@ section{
     }
 }
 @media (max-width: 768px){
-    .header{
-        background: #00abf0;
-    }
     #menu-icon{
         display: block;
     }
-    .logo i{
-        color: #fff;
-    }    
     .navbar{
         position: absolute;
         top: 100%;
         left: -100%;
         width: 100%;
         padding: 1rem 4%;
-        background: #00abf0;
+        background: lime;
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0,.2);
         z-index: 1;
         transition: .25s ease;
         transition-delay: .25s;
     }
+    .header.sticky .navbar a{
+        color: #fff;
+    }    
     .navbar a{
         display: block;
         font-size: 2rem;
@@ -413,13 +408,16 @@ section{
         transition-delay: 0s;
         left: 0;
     }
+    .navbar .active{
+        color: lime;
+    }    
     .navbar .active-nav{
         position: absolute;
         top: 0;
         left: -100%;
         width: 100%;
         height: 100%;
-        background: #00005A;
+        background: #01B636;
         border-top: .1rem solid rgba(0, 0, 0,.2);
         z-index: -1;
         transition: .25s ease;
@@ -432,6 +430,12 @@ section{
     .header.sticky .navbar a{
         color: #fff;
     }    
+    .header.sticky .navbar .active{
+        color: lime;
+    }   
+    .education{
+        padding: 0 2rem 4rem;
+    }        
 }
 @media(max-width: 991px){
     .footer{
