@@ -447,6 +447,9 @@ section{
         background: blueviolet;
     }
 }
+.hidden{
+    min-height: auto;
+}
 .bout{
     height: 100%;
     width: 100%;
